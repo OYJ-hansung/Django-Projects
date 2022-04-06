@@ -1,0 +1,16 @@
+img{
+    height: 300px;
+    width: 500px;
+    border: 10px pink;
+    margin: 0% 20%;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+li{
+    color: red;
+    text-align: center;
+}

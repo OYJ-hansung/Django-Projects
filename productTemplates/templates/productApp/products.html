@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static "css/products.css" %}">
+    </head>
+    <body>
+        <h1>{{heading}}</h1>
+        <ul>
+            <li>{{product1}}</li>
+            <img src= "{% get_static_prefix %}images/{{product1}}.jpg"/>
+            <li>{{product2}}</li>
+            <img src= "{% get_static_prefix %}images/{{product2}}.jpg"/>
+            <li>{{product3}}</li>
+            <img src= "{% get_static_prefix %}images/{{product3}}.jpg"/>
+        </ul>
+    </body>
+</html>
