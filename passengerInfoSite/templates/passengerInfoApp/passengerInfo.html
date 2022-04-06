@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Passenger Information</title>
+    </head>
+    <body>
+        <h1>Passenger List:</h1>
+        {% if passengers %}
+        <table>
+            <thead>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Reward Points</th>
+            </thead>
+            {% for pass in passengers %}
+            <tr>
+                <td>{{pass.firstName}}</td>
+                <td>{{pass.lastName}}</td>
+                <td>{{pass.email}}</td>
+                <td>{{pass.rewardPoints}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {%else%}
+        <p>No records found</p>
+        {% endif %}
+    </body>
+</html>
