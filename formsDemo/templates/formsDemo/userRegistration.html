@@ -8,6 +8,7 @@
         <h1>User Registration</h1>
         <form method="post">
             {{form.as_p}}
+            {% csrf_token %}
         </form>
     </body>
 </html>
