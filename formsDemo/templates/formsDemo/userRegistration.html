@@ -7,8 +7,12 @@
     <body>
         <h1>User Registration</h1>
         <form method="post">
-            {{form.as_p}}
+            <table>
+            {{form.as_table}}
             {% csrf_token %}
+            
+            </table>
+        </br><input type="submit" name="" value="Submit">
         </form>
     </body>
 </html>
