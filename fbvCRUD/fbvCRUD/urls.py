@@ -1,4 +1,4 @@
-"""loginSite URL Configuration
+"""fbvCRUD URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from loginApp import views
+from fbvApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', views.loginView)
+    path('', views.getStudents),
+    path('create/', views.createStudent),
+    path('delete/<int:id>', views.deleteStudent),
+    path('update/<int:id>', views.updateStudent)
 ]

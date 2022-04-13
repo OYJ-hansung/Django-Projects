@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form method="post">
+            <table>
+            {{form.as_table}}
+            {% csrf_token %}
+            
+            </table>
+        </br><input type="submit" name="" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-"""loginSite URL Configuration
+"""movieInfoSite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from loginApp import views
+from movieInfoApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', views.loginView)
+    path('', views.index),
+    path('moviesList/', views.listMovies),
+    path('newMovie/', views.addMovie)
 ]

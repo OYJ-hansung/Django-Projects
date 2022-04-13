@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Add Movie</title>
+    </head>
+    <body>
+        <h1>Add Movie</h1>
+        <form method="post">
+            {{forms.as_p}}
+            {% csrf_token %}
+            <input type="submit" value="Add Movie">
+        </form>
+    </body>
+</html>

@@ -1,4 +1,4 @@
-"""loginSite URL Configuration
+"""UdemyCourseSite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from loginApp import views
+from courseApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', views.loginView)
+    path('', views.getCourses),
+    path('create/', views.createCourse),
+    path('delete/<int:id>', views.deleteCourse),
+    path('update/<int:id>', views.updateCourse)
 ]
