@@ -1,5 +1,5 @@
 from django.db import models
-#test
+
 class Passenger(models.Model):
     firstName = models.CharField(max_length=15)
     lastName = models.CharField(max_length=30)
