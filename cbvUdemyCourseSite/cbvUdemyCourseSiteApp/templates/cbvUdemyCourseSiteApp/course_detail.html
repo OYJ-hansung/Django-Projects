@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Course Details</title>
+    </head>
+    <body>
+        <h1>Course Details</h1>
+        <ol>
+            <h3><li>Course Name: {{course.name}}</li></h3>
+            <h3><li>Description: {{course.description}}</li></h3>
+            <h3><li>instructor: {{course.instructor}}</li></h3>
+            <h3><li>rating: {{course.rating}}</li></h3>
+            <h3><li><a href="/delete/{{course.id}}">delete</a></li></h3>
+            <h3><li><a href="/update/{{course.id}}">update</a></li></h3>
+        </ol>
+    </body>
+</html>
