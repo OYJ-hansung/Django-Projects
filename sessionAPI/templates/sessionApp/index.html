@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Welcome to my shopping cart</h1>
+        <a href="/addItem">Add Item</a>
+        <a href="/displayItems">Display Cart</a>
+        <br/><b>Session Expiry Time in Sessions: {{request.session.get_expiry_age}}</b>
+        <br/><b>Session Expiry Time in Sessions: {{request.session.get_expiry_date}}</b>
+
+    </body>
+</html>
